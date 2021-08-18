@@ -35,7 +35,7 @@ void InitRes(int i)
 	}
 
 	// Enable Lynxes if Morale Steady is on.
-	if (TethysGame::UsesMorale())
+	if (!TethysGame::UsesMorale())
 	{
 		Player[i].MarkResearchComplete(3851);
 	}
